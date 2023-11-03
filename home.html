@@ -10,7 +10,6 @@
     <title>Stallion - Home</title>
     <link href="style.css" rel="stylesheet">
 
-    <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -23,13 +22,19 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@300&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@300&family=Poppins&display=swap"
+        rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+        integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
@@ -45,9 +50,9 @@
     <!-- add animation to navbar -->
 
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md bg-light">
         <div>
-            <img src="Stallion-Logo 2.png" width="40" height="50" class="d-inline-block align-top mr-2" alt="">
+            <img src="logo-go.png" width="40" height="50" id="logo-img" class="d-inline-block align-top mr-2" alt="">
             <b>
                 <a class="navbar-brand" href="#">Stallion</a>
             </b>
@@ -65,7 +70,7 @@
             <!-- <div class="container-fluid"> -->
             <ul class="navbar-nav mx-auto ml-auto">
                 <li class="nav-item active mx-3">
-                    <a class="nav-link" id="nav-item-active" href="#">Home </a>
+                    <a class="nav-link nav-link-go" href="#">Home </a>
                 </li>
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="achivement.html">Achievement</a>
@@ -81,16 +86,16 @@
                 </li>
             </ul>
             <div class="btn-group pr-2" role="group" aria-label="Basic example">
-                <a href="Electric.html"><button type="button" id="themeButton" class="btn btn-secondary" >Electric</button></a>
-                
+                <button type="button" id="themeButton" class="btn btn-secondary"></button>
+
             </div>
             <!-- </div> -->
         </div>
     </nav>
 
 
-    <div class="Gokart-img">
-        <div class="divider">
+    <div class="Gokart-img body-img-go">
+        <div class="divider divider-go">
             <div id="box1">30+ MEMBERS</div>
             <div id="box2">8 DEPARTMENTS</div>
             <div id="box3">2 VEHICLES</div>
@@ -106,24 +111,30 @@
         </p> -->
 
         <div class="container">
-            <fieldset class="f1-border--three-right">
-                <legend><h2 class="f1-bold--m no-margin" id="h2">
-        ABOUT US 
-</h2></legend>
-<div class="box" id="box">
-    <p id="para">Stallion Karting is a team of 30+ students from different disciplines in SKNCOE, Pune.
-        We are a collective of passionate individuals who are dedicated to engineering excellence, creativity, and personal growth. Our vision and mission reflect our commitment to these values as we move forward in our journey of engineering and innovation. Through our participation in competition of go-karts and electric vehicles, we put our engineering knowledge into practice. We take on real-world challenges, pushing the boundaries of what's possible in these fields.
-    </p>
+            <fieldset class="f1-border--three-right f1-border">
+                <legend>
+                    <h2 class="f1-bold--m no-margin f1-h2" id="h2">
+                        ABOUT US
+                    </h2>
+                </legend>
+                <div class="box" id="box">
+                    <p id="para" class="f1-para">Stallion Karting is a team of 30+ students from different disciplines in SKNCOE, Pune.
+                        We are a collective of passionate individuals who are dedicated to engineering excellence,
+                        creativity, and personal growth. Our vision and mission reflect our commitment to these values
+                        as we move forward in our journey of engineering and innovation. Through our participation in
+                        competition of go-karts and electric vehicles, we put our engineering knowledge into practice.
+                        We take on real-world challenges, pushing the boundaries of what's possible in these fields.
+                    </p>
 
-</div>
+                </div>
 
             </fieldset>
         </div>
     </div>
-    
+
     <!-- <section> -->
     <div class="Sec3">
-        <!-- <div class="card">
+        <!-- <div class="oud">
             <h2>MISSION</h2>
             <div class="text"><p>Our mission is to implement creative and innovative ideas in our vehicles and bring an overall upgrade in ourselves. Our motive is better than yesterday</p></div>
         </div>
@@ -148,88 +159,109 @@
         </div> -->
         <div class="info">
             <div id="cols">
-                <div class="mission"><div class="heading">MISSION</div>
-                <div class="para">At Stallion Karting, we are on a mission to implement creative and innovative ideas in the realm of go-karts and electric vehicles. We actively participate in various competitions, where we design, build, and race these vehicles. Our dedication to innovation is our driving force. We constantly seek new and improved solutions in our projects.
+                <div class="mission">
+                    <div class="heading">MISSION</div>
+                    <div class="para">At Stallion Karting, we are on a mission to implement creative and innovative
+                        ideas in the realm of go-karts and electric vehicles. We actively participate in various
+                        competitions, where we design, build, and race these vehicles. Our dedication to innovation is
+                        our driving force. We constantly seek new and improved solutions in our projects.
 
+                    </div>
+                </div>
+                <div class="vision">
+                    <div class="heading">VISION</div>
+                    <div class="para">We believe in the power of individual growth. We are committed to bringing out the
+                        best in each team member. By nurturing their talents and abilities, we create a diverse and
+                        skilled team that is ready to take on the challenges of engineering and innovation.
+                    </div>
+                </div>
+                <div class="dept">
+                    <div class="heading">DEPARTMENTS</div>
+                    <div class="para">
+                        <ul>
+                            <li>Transmission</li>
+                            <li>Steering</li>
+                            <li>Electrical</li>
+                            <li>Aesthetics/Bodyworks</li>
+                            <li>CAD</li>
+                            <li>CAE</li>
+                            <li>Social Media</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="vision"><div class="heading">VISION</div>
-            <div class="para">We believe in the power of individual growth. We are committed to bringing out the best in each team member. By nurturing their talents and abilities, we create a diverse and skilled team that is ready to take on the challenges of engineering and innovation. 
-            </div>
+
         </div>
-        <div class="dept"><div class="heading">DEPARTMENTS</div>
-            <div class="para"> <ul>
-                <li>Transmission</li>
-                <li>Steering</li>
-                <li>Electrical</li>
-                <li>Aesthetics/Bodyworks</li>
-                <li>CAD</li>
-                <li>CAE</li>
-                <li>Social Media</li>
-            </ul>
-            </div>
+        <div class="texture">
         </div>
-    </div>
-        
-    </div>
-    <div class="texture">
-    </div>
     </div>
 
     <div class="Sec4">
         <div class="bgimg">
-            <div class="news"><div class="heading">LATEST ACTIVITIES</div>
-            <p id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In exercitationem beatae soluta eos sequi expedita sint. Soluta eius tenetur natus expedita unde suscipit. Deleniti, possimus a consequatur praesentium obcaecati ea?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus at quos, exercitationem alias et assumenda consequuntur dolores ex natus cum aperiam nulla sint totam iure, consequatur aspernatur quidem! Animi, iusto!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsum explicabo fugiat cumque ducimus quis id? Veniam nisi sapiente voluptas, tenetur, sint molestiae fugit quo deserunt nemo sequi quisquam molestias?
-            </p>
-        </div>
-        </div>
-        
-    </div>
-<!-- </section> -->
-<footer>
-    <div class="main-content">
-        <div class="left box">
-            <h4>ADDRESS</h4>
-            <div class="content">
-                
-                <p>Stallion Karting & Efficycle workshop, Shrimati Kashibai Navale College of Engineering, Ambegaon BK, Pune, Maharashtra 411041</p>
-                
-            </div>
-        </div>
-        <div class="center box">
-            <h4>CONTACT</h4>
-            <div class="content">
-                <div class="phone">
-                    
-                    <span class="text">Phone: +91 9370228331</span>
-                </div>
-                <div class="email">
-                    <span class="text">Email: stallion.kartingefficycle_skncoe@sinhgad.edu</span>
-                </div>
-            </div>
-        </div>
-        <div class="right box">
-            <div class="social">
-                <h4>FOLLOW US ON</h4>
-                <a href="#"><span class="fa-brands fa-facebook"></span></a>
-                <a href="#"><span class="fa-brands fa-linkedin"></span></a>
-                <a href="#"><span class="fa-brands fa-instagram"></span></a>
-                <a href="#"><span class="fa-brands fa-youtube"></span></a>
+            <div class="news">
+                <div class="heading">LATEST ACTIVITIES</div>
+                <p id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In exercitationem beatae soluta
+                    eos sequi expedita sint. Soluta eius tenetur natus expedita unde suscipit. Deleniti, possimus a
+                    consequatur praesentium obcaecati ea?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus at quos, exercitationem alias
+                    et assumenda consequuntur dolores ex natus cum aperiam nulla sint totam iure, consequatur aspernatur
+                    quidem! Animi, iusto!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsum explicabo fugiat cumque ducimus
+                    quis id? Veniam nisi sapiente voluptas, tenetur, sint molestiae fugit quo deserunt nemo sequi
+                    quisquam molestias?
+                </p>
             </div>
         </div>
 
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15137.633204627116!2d73.8362293!3d18.4651557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29581a7668211%3A0xa013b05de5171978!2sStallion%20Karting%20%26%20Efficycles%20Workshop!5e0!3m2!1sen!2sin!4v1690978901648!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
     </div>
-    
-    
-    
-   
-</footer>
+    <!-- </section> -->
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h4>ADDRESS</h4>
+                <div class="content">
+
+                    <p>Stallion Karting & Efficycle workshop, Shrimati Kashibai Navale College of Engineering, Ambegaon
+                        BK, Pune, Maharashtra 411041</p>
+
+                </div>
+            </div>
+            <div class="center box">
+                <h4>CONTACT</h4>
+                <div class="content">
+                    <div class="phone">
+
+                        <span class="text">Phone: +91 9370228331</span>
+                    </div>
+                    <div class="email">
+                        <span class="text">Email: stallion.kartingefficycle_skncoe@sinhgad.edu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <div class="social">
+                    <h4>FOLLOW US ON</h4>
+                    <a href="#"><span class="fa-brands fa-facebook"></span></a>
+                    <a href="#"><span class="fa-brands fa-linkedin"></span></a>
+                    <a href="#"><span class="fa-brands fa-instagram"></span></a>
+                    <a href="#"><span class="fa-brands fa-youtube"></span></a>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15137.633204627116!2d73.8362293!3d18.4651557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29581a7668211%3A0xa013b05de5171978!2sStallion%20Karting%20%26%20Efficycles%20Workshop!5e0!3m2!1sen!2sin!4v1690978901648!5m2!1sen!2sin"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+
+
+    </footer>
 </body>
+<script src="transition.js"></script>
 
 <script>
     const navbarToggler = document.querySelector(".navbar-toggler");
@@ -239,7 +271,7 @@
         navbarCollapse.classList.toggle("show");
     });
 
-    function changeButtonName (){
+    function changeButtonName() {
         const btn = document.getElementById('themeButton');
         btn.textContent = "GoKart";
     }
