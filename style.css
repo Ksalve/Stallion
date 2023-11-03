@@ -13,6 +13,8 @@
     font-family: myFont1;
     src: url(f1_fonts/Formula1-Regular_web_0.ttf);
 }
+
+
 body {
     background-color: #000000;
 }
@@ -23,26 +25,33 @@ body {
     font-family: myFont;
 }
 
-.navbar {
+.navbar-go {
     background-color: #1e1f22 !important;
 }
 
+.navbar-elec {
+    background-color: #ffffff !important;
+}
+
+
+.navbar-brand-go{
+    color: #eb2222 !important;
+}
+
+.navbar-brand-elec{
+    color: #0e0303 !important;
+} 
+
 .navbar-dark .navbar-nav .nav-link,
-a.nav-link {
+.nav-link-go {
     color: #fff !important;
 }
 
-#carousal-text {
-    color: black;
+.navbar-dark .navbar-nav .nav-link,
+.nav-link-elec {
+    color: #000000 !important;
 }
 
-.navbar-brand,
-#nav-item-active,
-h4.cont-title,
-h4.text-center,
-h4.cont-title>span {
-    color: #eb2222 !important;
-}
 .nav-link::after{
     content:"";
     display: block;
@@ -61,21 +70,33 @@ h4.cont-title>span {
     flex-wrap: wrap;
 }
 
-.btn-group button {
+/* button styling for themes */
+.btn-go {
     background-color: #eb2222;
     color: #fff;
    
 }
+.btn-elec {
+    background-color: #000000;
+    color: #fff;
+}
 
 .btn-group button:hover {
-    
     color: #fff;
     background-color: #98bcaf;
 }
 
+/* Body image design */
+
+.body-img-go{
+    background:url('img-go.jpg');
+}
+.body-img-elec{
+    background:url('img-elec.webp');
+}
+
 .Gokart-img{
     height: 800px;
-    background:url('IMG20230219111308.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -129,6 +150,15 @@ h4.cont-title>span {
 .caption-text {
     margin: 0rem 1.5rem;
 }
+
+/* //About us theme design */
+/* GoKart Theme Styles */
+
+
+/* Define other GoKart theme styles as needed */
+
+
+
 .Sec2{
     width: 100%;
     height: 500px;
@@ -154,11 +184,45 @@ h4.cont-title>span {
     padding-right: 20px;
     padding-bottom: 20px;
 }
-.f1-border--three-right {
+
+/* Go theme */
+.f1-border-go{
     border-top: solid 10px #e10600;
     border-right: solid 10px #e10600;
-    border-bottom: solid 10px #e10600;
+    border-bottom: solid 10px #e10600; /* Green border */
 }
+
+.h2-go {
+    font-family: myFont;
+    font-size: 40px;
+    color:#E94560;  /* Green text color */
+}
+
+.para-go {
+    color: #333; /* Dark text color */
+}
+
+
+/* Electric theme */
+/* Electric Theme Styles */
+.f1-border-elec {
+    border-top: solid 10px #0073e6;
+    border-right: solid 10px #0073e6;
+    border-bottom: solid 10px #0073e6; 
+}
+
+.h2-elec {
+    font-family: myFont;
+    font-size: 40px;
+    color:#E94560;  /* Blue text color */
+}
+
+.para-elec {
+    color: #555; /* Slightly lighter text color */
+}
+
+/* Define other Electric theme styles as needed */
+
 
 fieldset {
     border: 0;
@@ -292,11 +356,7 @@ ul li{
 }
 #h2{
     text-align: left;
-    margin-top: 10px;
-    font-family: myFont;
-    font-size: 40px;
-    color:#E94560; 
-    
+    margin-top: 10px;    
 }
 .Sec4{
     background-image: linear-gradient(rgba(0, 0, 0, 0.35),rgba(0,0,0,0.35)),url(IMG_7879.jpg);
