@@ -7,11 +7,11 @@
 
 @font-face {
     font-family: myFont;
-    src: url(f1_fonts/Formula1-Bold_web_0.ttf);
+    src: url('fonts/Formula1-Bold_web_0.ttf');
 }
 @font-face {
     font-family: myFont1;
-    src: url(f1_fonts/Formula1-Regular_web_0.ttf);
+    src: url('fonts/Formula1-Regular_web_0.ttf');
 }
 
 
@@ -88,15 +88,16 @@ body {
 
 /* Body image design */
 
-.body-img-go{
-    background:url('img-go.jpg');
+/* .body-img-go{
+    background:url('../Images/img-go.jpg');
 }
 .body-img-elec{
-    background:url('img-elec.webp');
-}
+    background:url('../Images/img-elec.webp');
+} */
 
 .Gokart-img{
     height: 800px;
+    background:url('../Images/img-go.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -186,7 +187,7 @@ body {
 }
 
 /* Go theme */
-.f1-border-go{
+.f1-border-go, .f1-border--three-right{
     border-top: solid 10px #e10600;
     border-right: solid 10px #e10600;
     border-bottom: solid 10px #e10600; /* Green border */

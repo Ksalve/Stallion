@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Stallion - Home</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="styles/home-style.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -50,11 +50,11 @@
     <!-- add animation to navbar -->
 
 
-    <nav class="navbar navbar-expand-md bg-light">
+    <nav class="navbar navbar-go navbar-expand-md bg-light">
         <div>
-            <img src="logo-go.png" width="40" height="50" id="logo-img" class="d-inline-block align-top mr-2" alt="">
+            <img src="./Images/logo-go.png" width="40" height="50" id="logo-img" class="d-inline-block align-top mr-2" alt="">
             <b>
-                <a class="navbar-brand" href="#">Stallion</a>
+                <a class="navbar-brand navbar-brand-go" href="#">Stallion</a>
             </b>
         </div>
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -86,7 +86,7 @@
                 </li>
             </ul>
             <div class="btn-group pr-2" role="group" aria-label="Basic example">
-                <button type="button" id="themeButton" class="btn btn-secondary"></button>
+                <button type="button" id="themeButton" class="btn-go btn btn-secondary"></button>
 
             </div>
             <!-- </div> -->
@@ -255,13 +255,10 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-
-
-
-
     </footer>
 </body>
-<script src="transition.js"></script>
+<!-- <script src="/JS/transition.js"></script> -->
+<script src="/JS/main.js"></script>
 
 <script>
     const navbarToggler = document.querySelector(".navbar-toggler");
