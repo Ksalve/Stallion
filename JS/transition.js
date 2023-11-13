@@ -13,7 +13,7 @@ const f1_para =  document.querySelector('.f1-para');
 
 function setThemeElectric() {
     button.textContent = 'GoKart';
-    logo.src = "./logo-ev.png"
+    logo.src = "./Images/logo-ev.png"
     button.classList.remove('btn-go')
     button.classList.add('btn-elec')
     //navbar
@@ -46,7 +46,7 @@ function setThemeGo() {
     localStorage.setItem('theme', 'gokart')
 
     button.textContent = 'Electric';
-    logo.src = "logo-go.png"
+    logo.src = "./Images/logo-go.png"
 
     //Navbar 
     navbar.classList.remove('navbar-elec')
@@ -87,7 +87,7 @@ function toggleTheme() {
 
 document.addEventListener("DOMContentLoaded", ()=>{
     let theme = localStorage.getItem('theme')
-    console.log("COntent loaded theme is " + theme)
+    console.log("Content loaded theme is " + theme)
     if(theme === 'electric')
         setThemeElectric();
     else setThemeGo();
