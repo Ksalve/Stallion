@@ -3,11 +3,11 @@
 
 @font-face {
     font-family: myFont;
-    src: url(f1_fonts/Formula1-Bold_web_0.ttf);
+    src: url('../Fonts/Formula1-Bold_web_0.ttf');
 }
 @font-face {
     font-family: myFont1;
-    src: url(f1_fonts/Formula1-Regular_web_0.ttf);
+    src: url('../Fonts/Formula1-Regular_web_0.ttf');
 }
 
 body{

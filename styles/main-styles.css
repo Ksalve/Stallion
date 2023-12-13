@@ -7,13 +7,16 @@
 
 @font-face {
     font-family: myFont;
-    src: url('fonts/Formula1-Bold_web_0.ttf');
+    src: url('../Fonts/Formula1-Bold_web_0.ttf');
 }
 @font-face {
     font-family: myFont1;
-    src: url('fonts/Formula1-Regular_web_0.ttf');
+    src: url('../Fonts/Formula1-Regular_web_0.ttf');
 }
 
+body{
+    font-family: 'myFont1';
+}
 
  /* Navbar styling utility styling */
 
