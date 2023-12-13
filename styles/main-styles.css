@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+@font-face {
+    font-family: myFont;
+    src: url('fonts/Formula1-Bold_web_0.ttf');
+}
+@font-face {
+    font-family: myFont1;
+    src: url('fonts/Formula1-Regular_web_0.ttf');
+}
+
+
+ /* Navbar styling utility styling */
+
+.navbar {
+    transition: all 0.4s ease-in-out;
+    font-family: myFont;
+}
+
+.navbar-go {
+    background-color: #1e1f22 !important;
+}
+
+.navbar-elec {
+    background-color: #ffffff !important;
+}
+
+.nav-link-go {
+    color: #fff !important;
+}
+.nav-link-go::after{
+    content:"";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #eb2222;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+
+.nav-link-elec {
+    color: #000000 !important;
+}
+.nav-link-elec::after{
+    content:"";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #42906e;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after{
+    transform: scaleX(1);
+}
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* button styling for themes */
+.btn-go {
+    background-color: #eb2222;
+    color: #fff;
+   
+}
+.btn-elec {
+    background-color: #000000;
+    color: #fff;
+}
+
+.btn-group button:hover {
+    color: #fff;
+    background-color: #98bcaf;
+}

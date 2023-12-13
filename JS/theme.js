@@ -1,35 +1,64 @@
-console.log("loaded")
 import { setAchievementThemeElectric, setAchievementThemeGo } from "./achievement.js";
+import { setTeamThemeElectric, setTeamThemeGo } from "./team.js";
 
 const button = document.getElementById('themeButton');
 const navbar = document.querySelector('.navbar');
-const navbarBrand = document.querySelector('.navbar-brand')
 const navLinks = document.querySelectorAll('.nav-link');
 const logo = document.getElementById('logo-img')
 
+
+function isHomepage() {
+    const currentPage = window.location.href.split('/').pop();
+    console.log(currentPage) // Get the current page from the URL
+    return currentPage === 'Electric.html' || currentPage === 'home.html' || currentPage === 'home.html#';
+}
+
+function currentPage(){
+    const currentPage = window.location.href.split('/').pop();
+    return currentPage
+}
+
 function setThemeElectric() {
+    if (isHomepage()) {
+        console.log("homepage loaded")
+        if (window.location.href !== 'http://127.0.0.1:5500/Electric.html') {
+            window.location.href = '/Electric.html'
+        }
+    }
+
     localStorage.setItem('theme', 'electric')
 
     button.textContent = 'GoKart';
     logo.src = "./Images/logo-ev.png"
+
     button.classList.remove('btn-go')
     button.classList.add('btn-elec')
     //navbar
     navbar.classList.remove('navbar-go')
     navbar.classList.add('navbar-elec')
 
-    navbarBrand.classList.remove('navbar-brand-go')
-    navbarBrand.classList.add('navbar-brand-elec')
 
     navLinks.forEach(element => {
         element.classList.remove('nav-link-go')
         element.classList.add('nav-link-elec')
     });
 
-    setAchievementThemeElectric()
+    let cp = currentPage()
+    if(cp === "team.html")
+        setTeamThemeElectric()  
+    if(cp === "achivement.html") 
+        setAchievementThemeElectric()
+
 }
 
 function setThemeGo() {
+    if (isHomepage()) {
+        console.log("homepageloaded")
+        if (window.location.href !== 'http://127.0.0.1:5500/home.html') {
+            window.location.href = '/home.html'
+        }
+    }
+
     localStorage.setItem('theme', 'gokart')
 
     button.textContent = 'Electric';
@@ -47,15 +76,20 @@ function setThemeGo() {
     button.classList.remove('btn-elec')
     button.classList.add('btn-go')
 
-    setAchievementThemeGo()
+    let cp = currentPage()
+    if(cp === "team.html")
+        setTeamThemeGo()  
+    if(cp === "achivement.html") 
+        setAchievementThemeGo()
 }
 
-function toggleTheme(){
+function toggleTheme() {
     if (button.textContent === 'Electric') {
         setThemeElectric();
     } else {
         setThemeGo();
     }
+    location.reload();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
