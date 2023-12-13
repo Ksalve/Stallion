@@ -16,77 +16,6 @@ body {
     background-color: #000000;
 }
 
-/* add animation to navbar */
-.navbar {
-    transition: all 0.4s ease-in-out;
-    font-family: myFont;
-}
-
-.navbar-go {
-    background-color: #1e1f22 !important;
-}
-
-.navbar-elec {
-    background-color: #ffffff !important;
-}
-
-
-.navbar-brand-go {
-    color: #eb2222 !important;
-}
-
-.navbar-brand-elec {
-    color: #0e0303 !important;
-}
-
-.navbar-dark .navbar-nav .nav-link,
-.nav-link-go {
-    color: #fff !important;
-}
-
-.navbar-dark .navbar-nav .nav-link,
-.nav-link-elec {
-    color: #000000 !important;
-}
-
-.nav-link::after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 100%;
-    background-color: #eb2222;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
-
-.nav-link:hover::after {
-    transform: scaleX(1);
-}
-
-.btn-group {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* button styling for themes */
-.btn-go {
-    background-color: #eb2222;
-    color: #fff;
-
-}
-
-.btn-elec {
-    background-color: #000000;
-    color: #fff;
-}
-
-.btn-group button:hover {
-    color: #fff;
-    background-color: #98bcaf;
-}
-
-
 #container {
     min-height: 100vh;
     width: 1000px;
@@ -94,11 +23,20 @@ body {
     align-items: center;
     justify-content: center;
     padding: 100px 0;
-    background: radial-gradient(circle, transparent 25%, #000000 26%), linear-gradient(0deg, transparent 44%, #6d6d6d 45%, #6d6d6d 55%, transparent 56%), linear-gradient(90deg, transparent 44%, #6d6d6d 45%, #6d6d6d 55%, transparent 56%);
-    background-size: 1em 1em;
     background-color: #000000;
     opacity: 0.7;
     margin-left: 230px;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-bg-elec {
+    background: url('../Images/bg-elec.png');
+    
+}
+
+.container-bg-go {
+    background: url('../Images/bg-go.png'); 
 }
 
 .timeline {
@@ -114,33 +52,40 @@ body {
     list-style: none;
 }
 
-.timeline-item{
+.timeline-item {
     padding: 20px;
-    
     backdrop-filter: blur(50%);
-    
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.timeline-item-go{
+.timeline-item-go {
     background-color: #1e1f22;
     color: white;
 }
 
-.timeline-item-elec{
-    background-color: #7e7e7e;
-    color: white;
+.timeline-item-elec {
+    background-color: white;
+    color: black;
 }
 
-/* .timeline ul li {
-    padding: 20px;
-    background-color: #1e1f22;
-    backdrop-filter: blur(50%);
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 20px;
-} */
+.timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
+    top: 0px;
+}
+
+.timeline-item-go::before {
+    background-color: #E94560;
+}
+
+.timeline-item-elec::before {
+    background-color: #42906e;
+}
 
 .timeline ul li:last-child {
     margin-bottom: 0;
@@ -165,8 +110,16 @@ body {
     margin-bottom: 10px;
     padding-bottom: 10px;
     letter-spacing: 2px;
-    color: #E94560;
+    /* color: #E94560; */
     font-family: myFont;
+}
+
+.date-go {
+    color: #E94560;
+}
+
+.date-elec {
+    color: #42906e;
 }
 
 .footer {
@@ -218,9 +171,57 @@ body {
     background: #E94560;
 }
 
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+}
+
+.timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+}
+
+
+
+.timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+}
+
+.timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+}
+
+.timeline-content .date {
+    position: absolute;
+    top: -30px;
+}
+
 
 @media only screen and (min-width: 768px) {
-    .timeline:before {
+    /* .timeline:before {
         content: "";
         position: absolute;
         top: 0;
@@ -274,7 +275,7 @@ body {
     .timeline-content .date {
         position: absolute;
         top: -30px;
-    }
+    } */
 
     /* .timeline ul li:hover::before {
       background-color:#E94560;
