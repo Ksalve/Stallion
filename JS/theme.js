@@ -1,5 +1,7 @@
 import { setAchievementThemeElectric, setAchievementThemeGo } from "./achievement.js";
 import { setTeamThemeElectric, setTeamThemeGo } from "./team.js";
+import { setGalleryThemeElectric, setGalleryThemeGo } from "./gallery.js";
+import { setContactThemeGo, setContactThemeElectric } from "./contact.js"
 
 const button = document.getElementById('themeButton');
 const navbar = document.querySelector('.navbar');
@@ -13,7 +15,7 @@ function isHomepage() {
     return currentPage === 'Electric.html' || currentPage === 'home.html' || currentPage === 'home.html#';
 }
 
-function currentPage(){
+function currentPage() {
     const currentPage = window.location.href.split('/').pop();
     return currentPage
 }
@@ -44,10 +46,16 @@ function setThemeElectric() {
     });
 
     let cp = currentPage()
-    if(cp === "team.html")
-        setTeamThemeElectric()  
-    if(cp === "achivement.html") 
+    if (cp === "team.html")
+        setTeamThemeElectric()
+    if (cp === "achivement.html")
         setAchievementThemeElectric()
+
+    if (cp.toLowerCase() === "gallery.html")
+        setGalleryThemeElectric()
+
+    if (cp === "ReachOut1.html")
+        setContactThemeElectric()
 
 }
 
@@ -77,10 +85,14 @@ function setThemeGo() {
     button.classList.add('btn-go')
 
     let cp = currentPage()
-    if(cp === "team.html")
-        setTeamThemeGo()  
-    if(cp === "achivement.html") 
+    if (cp === "team.html")
+        setTeamThemeGo()
+    if (cp === "achivement.html")
         setAchievementThemeGo()
+    if (cp.toLowerCase() === "gallery.html")
+        setGalleryThemeGo()
+    if (cp === "ReachOut1.html")
+        setContactThemeGo()
 }
 
 function toggleTheme() {

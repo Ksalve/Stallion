@@ -1,0 +1,228 @@
+html {
+    font-family: myFont;
+}
+
+body {
+    background-color: #000000;
+}
+
+
+@font-face {
+    font-family: myFont;
+    src: url(f1_fonts/Formula1-Bold_web_0.ttf);
+}
+
+@font-face {
+    font-family: myFont1;
+    src: url(f1_fonts/Formula1-Regular_web_0.ttf);
+}
+
+
+.gallery {
+    display: grid;
+    height: 100vh;
+    /* background-color: red; */
+    grid-template-columns: auto auto;
+    grid-template-columns: auto auto;
+}
+
+.s-box {
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-top-right-radius: 15px;
+}
+
+/* .s-box1{
+            height: 95%;
+            width:99%;
+            background: repeating-linear-gradient(135deg, #f0f0f0 0, #f0f0f0 10%, transparent 0, transparent 50%);
+        background-size: 1em 1em;
+        background-color: #000000;
+        opacity: 0.2;
+        margin-top: 10px;
+        border-top-right-radius: 15px;
+        color: white;
+        display: flex;
+        padding-top: 10px;
+        }
+          */
+.link-cards-pattern-container {
+    padding: 20px 40px 20px 20px;
+    border-top-right-radius: 10px;
+    height: 100%;
+    color: #000000;
+    /* background-image: url(../Images/white-stripe.avif); */
+}
+
+
+/* .btn1 {
+    
+} */
+
+.btn-go {
+    background: #e10600;
+    box-shadow: none;
+    color: #fff;
+    text-align: center;
+}
+
+.btn1-elec {
+    background: #42906e;
+    box-shadow: none;
+    color: #fff;
+    text-align: center;
+}
+
+.btn1-elec:hover {
+    transition: all .5s cubic-bezier(.2, 0, .05, 1);
+    cursor: pointer;
+    background: white;
+    color: #42906e;
+    border: 1px solid #42906e;
+}
+
+.btn1 {
+    appearance: none;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    /* cursor: pointer; */
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* transition: all .5s cubic-bezier(.2,0,.05,1); */
+    font-family: 'Poppins';
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: .5px;
+    font-weight: 400;
+    font-weight: 600;
+    position: relative;
+    padding: 12px 15px 12px 15px;
+}
+
+.btn-go:hover {
+    transition: all .5s cubic-bezier(.2, 0, .05, 1);
+    cursor: pointer;
+    background: white;
+    color: #e10600;
+    border: 1px solid #e10600;
+    border-radius: 5px;
+}
+
+.btn1 i,
+.btn1.btn--follow:after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    height: 1em;
+    width: 1em;
+    margin-top: -1px;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(f1_fonts/Formula1-Bold_web_0.ttf);
+}
+
+.f1-bold--m {
+    font-size: 50px;
+    line-height: 30px;
+    font-family: myFont;
+    line-height: normal;
+}
+
+.f1-color--white {
+    color: #fff;
+}
+
+dl,
+ol,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.child1 {
+    background-image: url(../Images/gallery-bg1.jpg);
+    background-size: cover;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.child2 {
+    background-image: url(../Images/gallery-bg2.jpg);
+    background-size: cover;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.child3 {
+    background-image: url(../Images/gallery-bg3.jpg);
+    background-size: cover;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.child4 {
+    background-color: black;
+}
+
+.footer {
+    background: black;
+    width: 100%;
+    bottom: 0px;
+}
+
+.map {
+    margin: 30px 10px 10px 10px;
+    position: relative;
+    display: block;
+    float: right;
+    padding-right: 60px;
+}
+
+.main-content {
+    display: flex;
+    color: white;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.content {
+    font-size: 15px;
+}
+
+.box h4 {
+    font-family: myFont;
+    font-size: 20px;
+}
+
+.right .social a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: white;
+}
+
+.right .social a span:hover {
+    background: #E94560;
+}
