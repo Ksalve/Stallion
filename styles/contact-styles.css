@@ -1,0 +1,268 @@
+body {
+    /* background-color:  #38424E; */
+    background-color: #031a1beb;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(f1_fonts/Formula1-Bold_web_0.ttf);
+}
+
+@font-face {
+    font-family: myFont1;
+    src: url(f1_fonts/Formula1-Regular_web_0.ttf);
+}
+
+
+/* add animation to navbar */
+.container {
+    margin-top: 20px;
+    width: 85%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content .left-side {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.content .left-side::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+
+.content .left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details i {
+    font-size: 30px;
+    
+    margin-bottom: 10px;
+}
+
+.icon-elec{
+    color: #42906e;
+}
+
+.icon-go{
+    color: #E94560;
+}
+.content .left-side .details .topic {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+    font-size: 14px;
+    color: #afafb6;
+}
+
+.container .content .right-side {
+    width: 75%;
+    margin-left: 75px;
+}
+
+.topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    font-family: myFont;
+}
+
+.topic-text-elec{
+    color: #42906e;
+}
+.topic-text-go{
+    color: #E94560;
+}
+
+.right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+
+}
+
+.right-side .message-box {
+    min-height: 110px;
+
+}
+
+.right-side .input-box textarea {
+    padding-top: 6px;
+
+}
+
+.right-side .button {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.button{
+    color: #fff;
+    font-size: 18px;
+    font-family: myFont1;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.send{
+    color: #fff;
+    font-size: 18px;
+    font-family: myFont1;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.send-elec{
+    background: #42906e;
+}
+.send-go{
+    background: #E94560;
+}
+
+.send-elec:hover {
+    background: white;
+    color: #42906e;
+    border: 2px solid #42906e;
+}
+
+.send-go:hover {
+    background: white;
+    color: #E94560;
+    border: 2px solid #E94560;
+}
+
+@media (max-width: 950px) {
+    .container {
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+    }
+
+    .container .content .right-side {
+        width: 75%;
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 820px) {
+    .container {
+        margin: 40px 0;
+        height: 100%;
+    }
+
+    .container .content {
+        flex-direction: column-reverse;
+    }
+
+    .container .content .left-side {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container .content .left-side::before {
+        display: none;
+    }
+
+    .container .content .right-side {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.footer {
+
+    width: 100%;
+    bottom: 0px;
+}
+
+.map {
+    margin: 30px 10px 10px 10px;
+    position: relative;
+    display: block;
+    float: right;
+    padding-right: 60px;
+}
+
+.main-content {
+    display: flex;
+    color: white;
+    background: #2C3639;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 2px;
+}
+
+.content {
+    font-size: 14px;
+}
+
+.box h4 {
+    font-family: myFont;
+    font-size: 20px;
+}
+
+.right .social a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: white;
+}
+
+.right .social a span:hover {
+    background: #62D2A2;
+}

@@ -6,187 +6,24 @@
     <title>Reach Out To Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
-    <style>
-        body {
-            color: white;
-        }
-        .parent{ width: auto; height: auto; margin: auto;
-			display: flex ;  
-			flex-wrap: wrap; transition: all 0.2 linear;
-		}
-
-        .div1 {
-            width: 50%;
-            float: left;
-        }
-
-        .div2 {
-            width: 50%;
-            float: right;
-            padding-top: 50px;
-        }
-
-        @media only screen and (max-width: 767px) {
-.h1 {
-    font-size: 1.5rem;
-    line-height: 1.1;
-    display: flex;
-            flex-wrap: wrap;
-}
-
-.subheading {
-text-indent: 0;
-padding-top: 10px;
-padding-bottom: 20px;
-text-align: center;
-}
-}
-
-.h1 {
-text-indent: 50px;
-color: 04ACB4;
-padding-top: 40px;
-}
-
-.subheading {
-text-indent: 50px;
-padding-top: 20px;
-padding-bottom: 50px;
-}
-
-        input[type=text], input[type="email"],input[type=tel]{
-            
-            border: 2px solid #aaa;
-            border-radius: 4px;
-            margin: 8px 0;
-            outline: none;
-            padding: 8px;
-            box-sizing: border-box;
-            transition: .3s;
-        }
-
-        .label1 {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 25px;
-            margin-left: 50px;
-        }
-
-        .label2 {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 25px;
-            margin-left: 50px;
-        }
-
-        ::placeholder {
-            color: rgb(60, 164, 250);
-        }
-
-        .txtarea1 {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-            margin-left: 50px;
-             
-        }
-        textarea {
-            border: 2px solid #aaa;
-            border-radius: 4px;
-            margin: 8px 0;
-            outline: none;
-            padding: 8px;
-            box-sizing: border-box;
-            transition: .3s;
-            width: 510px;
-            height: 150px;
-            
-        }
-
-
-        .button {
-  margin-left: 237px;
-  width: 50px;
-}
-
-@media only screen and (max-width: 768px) {
-  .button {
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
-  }
-}
-        /* latest news */
-        .news-section {
-			width: 80%;
-			background-color: #f2f2f2;
-			padding: 20px;
-			box-sizing: border-box;
-			font-family: Arial, sans-serif;
-			height: 600px;
-			overflow-y: scroll;
-            
-            background-color: #04ACB4;
-		}
-        .news-section::-webkit-scrollbar {
-			width: 10px;
-		}
-
-		.news-section::-webkit-scrollbar-track {
-			background: #04ACB4;
-			border-radius: 10px;
-		}
-
-		.news-section::-webkit-scrollbar-thumb {
-			background: #fff;
-			border-radius: 10px;
-		}
-
-		.news-section h2 {
-			text-align: center;
-			margin-top: 0;
-			color: #fff;
-		}
-
-		.news-item {
-            padding-top: 25px;
-			display: flex;
-			margin-bottom: 20px;
-		}
-
-		.news-item img {
-			width: 100px;
-			height: 100px;
-			margin-right: 10px;
-		}
-
-		.news-item h3 {
-			font-size: 18px;
-			margin: 0;
-		}
-
-		.news-item p {
-			font-size: 14px;
-			margin: 5px 0;
-		}
-
-       
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles/contact-styles.css">
+    <link rel="stylesheet" href="./styles/main-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
 </head>
 
 <body style="background-color:161B21;">
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md bg-light">
         <div>
-            <img src="Stallion-Logo 2.png" width="40" height="50" class="d-inline-block align-top mr-2" alt="">
-            <b>
-                <a class="navbar-brand" href="#">Stallion</a>
-            </b>
+            <img src="./Images/logo-go.png" width="120px" height="50px" id="logo-img"
+                class="d-inline-block align-top mr-2" alt="">
         </div>
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -196,110 +33,116 @@ padding-bottom: 50px;
             <!-- <div class="container-fluid"> -->
             <ul class="navbar-nav mx-auto ml-auto">
                 <li class="nav-item active mx-3">
-                    <a class="nav-link" id="nav-item-active" href="home.html">Home </a>
+                    <a class="nav-link" href="#">Home </a>
                 </li>
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="achivement.html">Achievement</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">Team</a>
+                    <a class="nav-link" href="team.html">Team</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">Gallery</a>
+                    <a class="nav-link" href="Gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="ReachOut1.html">Contact</a>
                 </li>
             </ul>
             <div class="btn-group pr-2" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">Petrol </button>
-                <button type="button" class="btn btn-secondary">Electric</button>
+                <button type="button" id="themeButton" class="btn btn-secondary"></button>
+
             </div>
             <!-- </div> -->
         </div>
     </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-        </script>
-       <div class="parent">
-    <div class="div1">
-        <!--Upper Text-->
-        <div class="h1">
-            <h1><b>Reach Out To Us</b></h1>
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">Stallion Karting & Efficycle workshop, Shrimati Kashibai Navale College of
+                        Engineering, </div>
+                    <div class="text-two">Ambegaon BK, Pune, Maharashtra 411041</div>
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt icon"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+91 9370228331</div>
+                    <div class="text-two">+0096 3434 5678</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope icon"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">stallion.kartingefficycle_skncoe@sinhgad.edu</div>
+                    <!-- <div class="text-two">info.codinglab@gmail.com</div> -->
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>If you have any work from me or any types of quries related to my tutorial, you can send me message
+                    from here. It's my pleasure to help you.</p>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box message-box">
+                        <input type="text" placeholder="Enter your message">
+                    </div>
+                    <div class="button">
+                        <button class="send" id="send">Send Now</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="subheading">
-            <h2>Our Friendly Team Will Contact You Shortly</h2>
-        </div>
-        <!--Reach Out To Us Form-->
-        <form>
-            <div class="label1">
-
-                <input type="text" id="name" name="name" placeholder="First Name" style="margin-right: 110px;">
-                <input type="text" id="name" name="name" placeholder="Last Name">
-                
-            </div>
-
-            <div class="label2">
-
-                <input type="tel" id="phone" name="phone" placeholder="Contact Number"
-                    style="margin-right: 110px;">
-
-                    <input type="email" id="email" name="email" placeholder="Email Address">
-            </div>
-            <div class="txtarea1">
-                <textarea name="myText"  id="name"
-                    placeholder="Write Your Message Here!!!"></textarea>
-            </div>
-            <div class="button">
-                <button type="submit" class="btn btn-primary" style="font-size: 17px;
-                padding: 7px 40px;background-color: #04ACB4;">Submit</button>
-            </div>
-        </form>
     </div>
+
+    <!-- <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h4>ADDRESS</h4>
+                <div class="content">
+                    
+                    <p>Stallion Karting & Efficycle workshop, Shrimati Kashibai Navale College of Engineering, Ambegaon BK, Pune, Maharashtra 411041</p>
+                    
+                </div>
+            </div>
+            <div class="center box">
+                <h4>CONTACT</h4>
+                <div class="content">
+                    <div class="phone">
+                        
+                        <span class="text">Phone: +91 9370228331</span>
+                    </div>
+                    <div class="email">
+                        <span class="text">Email: stallion.kartingefficycle_skncoe@sinhgad.edu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <div class="social">
+                    <h4>FOLLOW US ON</h4>
+                    <a href="#"><span class="fa-brands fa-facebook"></span></a>
+                    <a href="#"><span class="fa-brands fa-linkedin"></span></a>
+                    <a href="#"><span class="fa-brands fa-instagram"></span></a>
+                    <a href="#"><span class="fa-brands fa-youtube"></span></a>
+                </div>
+            </div>
     
-    <div class="div2">
-        
-        <div class="news-section">
-            <h2>Latest News</h2>
-            <div class="news-item">
-                <img src="https://via.placeholder.com/100x100" alt="News image">
-                <div>
-                    <h3>First news item</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="news-item">
-                <img src="https://via.placeholder.com/100x100" alt="News image">
-                <div>
-                    <h3>Second news item</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="news-item">
-                <img src="https://via.placeholder.com/100x100" alt="News image">
-                <div>
-                    <h3>Third news item</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="news-item">
-                <img src="https://via.placeholder.com/100x100" alt="News image">
-                <div>
-                    <h3>Third news item</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="news-item">
-                <img src="https://via.placeholder.com/100x100" alt="News image">
-                <div>
-                    <h3>Third news item</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15137.633204627116!2d73.8362293!3d18.4651557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29581a7668211%3A0xa013b05de5171978!2sStallion%20Karting%20%26%20Efficycles%20Workshop!5e0!3m2!1sen!2sin!4v1690978901648!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-    
-  </div>
-
+        
+        
+        
+       
+    </footer> -->
+    <script type="module" src="./JS/theme.js"></script>
+    <script type="module" src="./JS/contact.js"></script>
 </body>
 
 </html>

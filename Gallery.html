@@ -1,272 +1,163 @@
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <title>Gallery</title>
-        <link href="style.css" rel="stylesheet">
-    
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@300&family=Poppins&display=swap" rel="stylesheet">
-    
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-        
-    </head>
-    <style>
-        .gallery{
-            display: grid;
-            height: 100vh;
-            /* background-color: red; */
-            grid-template-columns: auto auto;
-            grid-template-columns: auto auto;
-        }
-        .s-box{
-            height: 100%;
-            width:100%;
-            border-top: 2px solid white;
-            border-right: 2px solid white;
-            border-top-right-radius: 15px;
-        }
-        /* .s-box1{
-            height: 95%;
-            width:99%;
-            background: repeating-linear-gradient(135deg, #f0f0f0 0, #f0f0f0 10%, transparent 0, transparent 50%);
-        background-size: 1em 1em;
-        background-color: #000000;
-        opacity: 0.2;
-        margin-top: 10px;
-        border-top-right-radius: 15px;
-        color: white;
-        display: flex;
-        padding-top: 10px;
-        }
-          */
-    .link-cards-pattern-container {
-    padding: 20px 40px 20px 20px;
-    border-top-right-radius: 10px;
-    height: 100%;
-    background-image: url(images/white-stripe.avif);   
-}
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Gallery</title>
 
-.btn1.btn--default, .btn.btn--follow, .btn.btn--live {
-    background: #e10600;
-    box-shadow: none;
-    color: #fff;
-    text-align: center;
-}
-.btn1 {
-    appearance: none;
-    border-radius: 5px;
-    border: none;
-    box-sizing: border-box;
-    /* cursor: pointer; */
-    display: inline-block;
-    line-height: 1;
-    text-decoration: none;
-    text-transform: uppercase;
-    /* transition: all .5s cubic-bezier(.2,0,.05,1); */
-    font-family: 'Poppins';
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: .5px;
-    font-weight: 400;
-    font-weight: 600;
-    position: relative;
-    padding: 12px 15px 12px 15px;
-}
-.btn1:hover{
-    transition: all .5s cubic-bezier(.2,0,.05,1);
-    cursor: pointer;
-    background: white;
-    color: #e10600;
-    border: 1px solid #e10600;
-    border-radius: 5px;
-}
-.btn1 i, .btn1.btn--follow:after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 15px;
-    height: 1em;
-    width: 1em;
-    margin-top: -1px;
-}
-@font-face {
-    font-family: myFont;
-    src: url(f1_fonts/Formula1-Bold_web_0.ttf);
-}
-.f1-bold--m {
-    font-size: 50px;
-    line-height: 30px;
-    font-family: myFont;
-    line-height: normal;
-}
-.f1-color--white {
-    color: #fff;
-}
-dl, ol, p, ul {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-        
-        .child1{
-            background-image: url(images/LPU/IMG_5849.jpeg);
-            background-size: cover;
-            margin: 10px;
-            padding: 10px;
-            display: flex;
-        }
-       
-        
-        .child2{
-            background-image: url(images/edgeline/IMG_7840.jpg);
-            background-size: cover;
-            margin: 10px;
-            padding: 10px;
-            display: flex;
-        }
-        .child3{
-            background-image: url(images/AIRC/WhatsApp\ Image\ 2023-05-30\ at\ 16.07.49.jpg);
-            background-size: cover;
-            margin: 10px;
-            padding: 10px;
-            display: flex;
-        }
-        .child4{
-            background-color:black;
-        }
-    </style>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div>
-                <img src="Stallion-Logo 2.png" width="40" height="50" class="d-inline-block align-top mr-2" alt="">
-                <b>
-                    <a class="navbar-brand" href="#">Stallion</a>
-                </b>
-            </div>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@300&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+        integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/gallery-styles.css">
+    <link href="./styles/main-styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-light">
+        <div>
+            <img src="./Images/logo-go.png" width="120px" height="50px" id="logo-img"
+                class="d-inline-block align-top mr-2" alt="">
+        </div>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- <div class="container-fluid"> -->
-                <ul class="navbar-nav mx-auto ml-auto">
-                    <li class="nav-item active mx-3">
-                        <a class="nav-link"  href="home.html">Home </a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="achivement.html">Achievement</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="team.html">Team</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" id="nav-item-active" href="Gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="ReachOut1.html">Contact</a>
-                    </li>
-                </ul>
-                <div class="btn-group pr-2" role="group" aria-label="Basic example">
-                    <a href="Electric.html"><button type="button" class="btn btn-secondary" >Electric</button></a>
-                <!-- </div> -->
-            </div>
-        </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="gallery">
-            <div class="child1">
-                <div class="s-box">
-                    <!-- <div class="s-box1">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- <div class="container-fluid"> -->
+            <ul class="navbar-nav mx-auto ml-auto">
+                <li class="nav-item active mx-3">
+                    <a class="nav-link" href="#">Home </a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="achivement.html">Achievement</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="team.html">Team</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="Gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="ReachOut1.html">Contact</a>
+                </li>
+            </ul>
+            <div class="btn-group pr-2" role="group" aria-label="Basic example">
+                <button type="button" id="themeButton" class="btn btn-secondary"></button>
+
+            </div>
+            <!-- </div> -->
+        </div>
+    </nav>
+
+    <div class="gallery">
+        <div class="child1">
+            <div class="s-box">
+                <!-- <div class="s-box1">
                         SAE NIS Efficycle 
                         Championship 2022
                     </div> -->
-                    <div class="link-cards-pattern-container">
-                        <p class="f1-bold--m f1-color--white">SAE NIS Efficycle 
-                            Championship 2022</p>
-                        <button href="https://www.f1authentics.com/" class="btn1 btn--default">VIEW ALL</button>
-                    </div>
+                <div class="link-cards-pattern-container">
+                    <p class="f1-bold--m f1-color--white">SAE NIS Efficycle
+                        Championship 2022</p>
+                    <button href="https://www.f1authentics.com/" class="btn1 btn--default">VIEW ALL</button>
                 </div>
             </div>
-            <div class="child2">
-                    <div class="s-box">
-                        <div class="link-cards-pattern-container">
-                            <p class="f1-bold--m f1-color--white">F1® Authentics - F1 and team memorabilia</p>
-                            <button href="https://www.f1authentics.com/" class="btn1 btn--default">VIEW ALL<i class="icon icon-chevron-right"></i></button>
-                        </div>
-                    </div>
-            </div>
-            <div class="child3">
-                <div class="s-box">
-                    <div class="link-cards-pattern-container">
-                        <p class="f1-bold--m f1-color--white">F1® Authentics - F1 and team memorabilia</p>
-                        <button href="https://www.f1authentics.com/" class="btn1 btn--default">VIEW ALL<i class="icon icon-chevron-right"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="child4"></div>
         </div>
-        <footer>
-            <div class="main-content">
-                <div class="left box">
-                    <h4>ADDRESS</h4>
-                    <div class="content">
-                        
-                        <p>Stallion Karting & Efficycle workshop, Shrimati Kashibai Navale College of Engineering, Ambegaon BK, Pune, Maharashtra 411041</p>
-                        
-                    </div>
-                </div>
-                <div class="center box">
-                    <h4>CONTACT</h4>
-                    <div class="content">
-                        <div class="phone">
-                            
-                            <span class="text">Phone: +91 9370228331</span>
-                        </div>
-                        <div class="email">
-                           
-                            <span class="text">Email: stallion.kartingefficycle_skncoe@sinhgad.edu</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right box">
-                    <div class="social">
-                        <h4>FOLLOW US ON</h4>
-                        <a href="#"><span class="fa-brands fa-facebook"></span></a>
-                        <a href="#"><span class="fa-brands fa-linkedin"></span></a>
-                        <a href="#"><span class="fa-brands fa-instagram"></span></a>
-                        <a href="#"><span class="fa-brands fa-youtube"></span></a>
-                    </div>
-                </div>
-        
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15137.633204627116!2d73.8362293!3d18.4651557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29581a7668211%3A0xa013b05de5171978!2sStallion%20Karting%20%26%20Efficycles%20Workshop!5e0!3m2!1sen!2sin!4v1690978901648!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="child2">
+            <div class="s-box">
+                <div class="link-cards-pattern-container">
+                    <p class="f1-bold--m f1-color--white">F1® Authentics - F1 and team memorabilia</p>
+                    <button href="https://www.f1authentics.com/" class="btn1 btn--default">VIEW ALL<i
+                            class="icon icon-chevron-right"></i></button>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+        <div class="child3">
+            <div class="s-box">
+                <div class="link-cards-pattern-container">
+                    <p class="f1-bold--m f1-color--white">F1® Authentics - F1 and team memorabilia</p>
+                    <button href="https://www.f1authentics.com/" class="btn1 btn--default">VIEW ALL<i
+                            class="icon icon-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="child4"></div>
+    </div>
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h4>ADDRESS</h4>
+                <div class="content">
+
+                    <p>Stallion Karting & Efficycle workshop, Shrimati Kashibai Navale College of Engineering, Ambegaon
+                        BK, Pune, Maharashtra 411041</p>
+
+                </div>
+            </div>
+            <div class="center box">
+                <h4>CONTACT</h4>
+                <div class="content">
+                    <div class="phone">
+
+                        <span class="text">Phone: +91 9370228331</span>
+                    </div>
+                    <div class="email">
+
+                        <span class="text">Email: stallion.kartingefficycle_skncoe@sinhgad.edu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <div class="social">
+                    <h4>FOLLOW US ON</h4>
+                    <a href="#"><span class="fa-brands fa-facebook"></span></a>
+                    <a href="#"><span class="fa-brands fa-linkedin"></span></a>
+                    <a href="#"><span class="fa-brands fa-instagram"></span></a>
+                    <a href="#"><span class="fa-brands fa-youtube"></span></a>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15137.633204627116!2d73.8362293!3d18.4651557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29581a7668211%3A0xa013b05de5171978!2sStallion%20Karting%20%26%20Efficycles%20Workshop!5e0!3m2!1sen!2sin!4v1690978901648!5m2!1sen!2sin"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./JS/theme.js"></script>
+    <script type="module" src="./JS/gallery.js"></script>
+</body>
+
+</html>
