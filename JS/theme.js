@@ -109,7 +109,9 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Content loaded theme is " + theme)
     if (theme === 'electric')
         setThemeElectric();
-    else setThemeGo();
+    else{
+        setThemeGo();
+    }
 })
 
 themeButton.addEventListener('click', () => {
